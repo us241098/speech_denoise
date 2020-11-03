@@ -12,6 +12,7 @@ An Encoder-Decoder based approach to denoise an input speech signal. [Following]
   - ```Denoise_Test.ipynb``` demonstrates training process.
   - ```Denoise_Test.ipynb``` demonstrates inference process.
   - ```denoiser_test.py``` takes input clean audio and noisy audio, mix them to create a mixed signal and then apply then apply inference process to produce a denoised output.
+  - Ensure that you are using Tensorflow version 2.3.0 and Librosa versions other than 0.8.0
  
   - Execute the following command and output audio file will be generated with the same name as of the input clean audio but with an "_output.wav" suffix.
  
