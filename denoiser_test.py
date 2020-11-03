@@ -129,7 +129,9 @@ def denoiseAudio(clean_audio, noise_audio):
     STFTFullyConvolutional = model.predict(predictors)
     denoisedAudioFullyConvolutional = revert_features_to_audio(noiseAudioFeatureExtractor,STFTFullyConvolutional, noisyPhase, mean, std)
  #  ipd.Audio(data=denoisedAudioFullyConvolutional, rate=fs) # load a local WAV file
-    librosa.output.write_wav(clean_audio+"_output.wav", denoisedAudioFullyConvolutional, fs)
+    librosa.output.write_wav(clean_audio+"_output.wav", denoisedAudioFullyConvolutional, 16000)
+    print("write successful")
+    print("Audio saved: " + clean_audio + "_output.wav")
     
     
 if __name__ == "__main__":
