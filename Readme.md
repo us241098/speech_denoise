@@ -30,6 +30,7 @@ $ python3 denoiser_test.py test_data/clean_audio/sample-000000.mp3 test_data/noi
   - Use different sampling rates.
   - Use other architectures mentioned in the paper (RNNs, DNNs)
   - Dive into GAN and see its performance on the task.
+  - Use of different features like MFCC, CQT and others.
 
 
     
